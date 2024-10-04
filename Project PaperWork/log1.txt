@@ -1,0 +1,85 @@
+import React from 'react';
+
+function Dashboard(props) {
+    return (
+        <div className='container'>
+            <div className='row'>
+                <div className='col-md-12'>
+
+                <h1>Dashboard</h1>
+            <table className='table'>
+                <tr>
+                    <td>
+
+
+                        <h3>    Master  </h3>
+                        <div>
+                            <ul>
+                                <li><a className="btn btn-danger" href="/CounterShow">Counter</a></li>
+                                <li><a className="btn btn-danger" href="/DepShow">Department</a></li>
+                                <li><a className="btn btn-danger" href="/EmpShow">Employee</a></li>
+                                <li><a className="btn btn-danger" href="/ItemShow">Item</a></li>
+                                <li><a className="btn btn-danger" href="/ItemCatShow">Item-Category</a></li>
+                                <li><a className="btn btn-danger" href="/PostShow">Post</a></li>
+
+                            </ul>
+                        </div>
+
+                    </td>
+                    <td>
+                    <h3>    Transaction</h3>
+                        <div>
+                            <ul>
+                                <li><a className="btn btn-danger" href="/ReceiptShow">Receipt</a></li>
+                                <li><a className="btn btn-danger" href="/DetShow">Sale-Detail</a></li>
+                                <li><a className="btn btn-danger" href="/MasterShow">Sale-Master</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        <h3>Date Wise</h3>
+                        <div>
+                            <ul>
+                                <li><a className="btn btn-danger" href="/SaleMasterDatewise">Sale-Master Date</a></li>
+                                <li><a className="btn btn-danger" href="/ReceiptDatewise">Receipt Date</a></li>
+                                <li><a className="btn btn-danger" href="/EmpDatewise">Employee Date</a></li>
+                            </ul>
+                        </div>
+
+                    </td>
+                    <td>
+
+
+                        <h3>Dynamic Report</h3>
+                        <div>
+                            <ul>
+                                <li><a className="btn btn-danger"  href="/CEwiseSMaster">Sale-Master</a></li>
+                                <li><a className="btn btn-danger" href="/DepWiseItemCat">Item-Category</a></li>
+                                <li><a className="btn btn-danger" href="/DeptItemWiseItem">Item</a></li>
+                                <li><a className="btn btn-danger" href="/PostWiseEmp">Employee</a></li>
+                                <li><a className="btn btn-danger" href="/SaleMastWiseSaleDet"> Sale-Detail</a></li>
+                            </ul>
+                        </div>
+
+                    </td>
+
+
+                </tr>
+
+
+
+
+            </table>
+                </div>
+            </div>
+  
+        </div >
+    );
+}
+
+export default Dashboard;

@@ -1,0 +1,4 @@
+  
+   1) 	if MySQL is not start then go to the service panel and search the MySQL 
+	and stop the service and then(go to the xampp panel and start the MySQL server) 
+	again start the MySQL service and now its starting 

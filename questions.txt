@@ -1,0 +1,81 @@
+1. what is github
+
+2. what is jar
+=> jar is the just like a zip file,its the collection of class files.
+   jar is also called dependencies 
+
+3. how to create jar file
+=> select the file and export then browse and create the file select the jar option on this selected file then jar is created.
+
+4. whats use of it jar file
+=> Add one project to another project
+
+5. how to communicate between multiple projects
+=> add jar's(project) build path
+				=> configurate 
+						=>class path
+								=> select the jar and apply.
+
+6. whats a problem with multiple jar files in a project.
+=> dependency conflicts:- different jar files might contain different versions the same library,leading to classpath
+  , increased comlpexity,
+
+7. Why maven?
+=> it is a dependencies management tool. its a repository where we can get all versions of all jar files easily.
+
+8. what is project structure of maven project.
+=> project name
+	>src
+	    >main
+		>java
+		>resourses
+	    >test
+		>java
+		>resourses
+	>target
+	>pom.xml
+
+9. do you kow any alternative to maven?
+=> Gridle is alternative to maven.
+
+10. what is compiled dependencies
+11. which is the used for writing dependency in pom.xml
+=>  element which incluedes the group Id, artifact Id, and version
+    in dependency we write dependent jar file path and then save it can be auto download jar file in project.
+
+12. what is local repository
+13. whats anme of local repo
+14. what all tags u are aware in pom.xml
+15. can u convert existing java projects into maven project?
+16. what is artifact in maven
+17. what is group in maven
+18. what is target folder in maven project
+19. what are the goals in maven
+20. can u explain each goal of maven in deatails.
+21. what is snapsot or how we can give name to our jar file.
+
+22. annotations in java
+=> 1.built in annotations
+	-@override :- indicates method is intended to override a method in superclass.
+	-@deprecated :- compiler warning is generated when it is used
+	-@functionalInterface :- it can have only one abstract method
+
+  2.unit testing
+	-@test :- marks a method as a test method 
+	-@before , @after:- run before in test method , run after each test method.
+
+  3. annotation in spring framework
+	-@component :- automatic detect the springs component scanning and registerd in spring bean
+	-@autowired :- automatically inject a dependenci in to class file constructor or setter method
+	-@controller @service @repository :- it represent the different layer in typical spring app.
+
+23. pojo full form in maven project
+=> plain old java object
+
+24. use of @component annotations
+=> it is create the class in spring bean
+
+25. use of @Autowired annotations
+=> it is inject the spring bean into another bean 
+   in simple word it access the @component class
+

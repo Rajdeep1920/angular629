@@ -1,0 +1,4 @@
+1. ctrl+shift+f =set the page 
+2. ctrl+Shift+R = find the element 
+3. ctrl+Q = go to the end point of page
+4. ctrl+D= delete the line

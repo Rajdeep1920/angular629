@@ -1,0 +1,66 @@
+
+ 
+
+import { useState, useContext } from 'react';
+ 
+import { useNavigate } from 'react-router-dom';
+function LogIn(){
+
+  const [u, setU] = useState("admin");
+	const [p, setP] = useState("123");
+
+	const [flag, setFlag] = useState(0);
+	const navigate = useNavigate()
+
+
+	const check = () => {
+		 
+
+		if (u === "admin" && p === "123") {
+	 
+			 
+		 navigate("/Dashboard")
+		}
+		else
+		{
+			alert(u+""+p)
+			setFlag(0)
+		}
+	}
+
+    return(
+      <div className='pad'>
+       
+          
+          
+       <div class="call-to-action">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="inner-content">
+              <div class="row">
+                <div class="col-md-12">
+                  <br>
+                  </br>
+                  <h2>Login</h2>
+                <br></br>
+
+               
+                
+                  <input type="text" className="form-control" onChange={(e)=>setU(e.target.value)} placeholder="Username"/><br></br>
+                  <input type="password" className="form-control" onChange={(e)=>setP(e.target.value)} placeholder="Password"/><br></br>
+                  <button type="submit" id="form-submit" onClick={check} class="btn btn-danger">Login</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+         
+           
+    </div>
+    )
+}
+export default LogIn;

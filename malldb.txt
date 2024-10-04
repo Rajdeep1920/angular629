@@ -1,0 +1,80 @@
+ create table Department(
+dept_id int,
+dept_nm varchar(50)
+)
+
+
+create table Item_category(
+cat_id int,
+dept_id int,
+cat_nm varchar(50)
+)
+
+
+create table Item(
+item_id int,
+dept_id int,
+cat_id int,
+item_nm varchar(50),
+item_UOM varchar(50)
+item_stock int
+)
+
+
+create table Employee(
+emp_id int,
+post_id int,
+shift_nm varchar(50),
+emp_nm varchar(50),
+emp_addr varchar(50),
+emp_phno varchar(50),
+emp_mail varchar(50),
+emp_salary int,
+emp_DOB date,
+emp_DOJ date
+)
+
+
+create table Post(
+post_id int,
+post_nm varchar(50)
+)
+
+
+create table Counter(
+counter_id int,
+counter_nm varchar(50)
+)
+
+
+create table Sale_master(
+sale_id int,
+counter_id int,
+emp_id int,
+sale_date date,
+gst float,
+grand_total int
+)
+
+
+create table Sale_detail(
+sale_det_id int,
+sale_id int,
+item_id int,
+item_rate int,
+item_qty int,
+item_amt int
+)
+
+
+create table Receipt(
+rec_id int,
+rec_date date,
+cust_id int,
+rec_amt int
+)
+
+
+
+
+

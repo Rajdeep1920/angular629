@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+  <title>Order Page</title>
+  <link rel="icon" href="order.webp" type="image/png">
+    <style>
+  .order{
+    margin-left: 35%;
+    margin-top: 70px;
+    background-image: url(orderbg.avif);
+    width: 400px;
+    height: 600px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: block;
+  }
+  h2,h3{
+    color: white;
+    padding-top: 20px;
+   padding-left: 50px;
+  }
+  .name,.email,.phone,.address,.quantity{
+    background-color: transparent;
+    margin-left: 40px;
+    margin-bottom: 20px;
+     /* margin: 20px; */
+     height: 30px;
+     width: 300px;
+     color: white;
+  }
+   ::placeholder{
+    color: wheat;
+    justify-content: center;
+    padding-left: 10px;
+  }
+
+  .btn {
+    display:block;
+    background-color:transparent;
+    color: yellow;
+    padding: 10px 20px;
+    margin-left: 140px;
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-weight: bold;
+  }
+
+  .btn:hover {
+    background-image: url(misal.5.jpg);
+    border-radius: 10px;
+    color: aliceblue;
+    border: 3px solid rgb(241, 29, 29);
+  }
+    </style>
+</head>
+<body>
+    <div class="order">
+        <h2>Enjoy Your Pizza At Home</h2>
+        <form id="Order">
+          <input class="name" type="text" name="name" placeholder="Your Name" required>
+          <input class="email" type="text" name="your Email" placeholder="Your Email" required>
+          <input class="phone" type="text" name="your Mobile No" placeholder="Your Mobile No" required>
+          <input class="address" type="text" name="your address" placeholder="Your Address" required>
+          <input class="quantity" type="text" name="Quantity" placeholder="Quantity of Pizza" required>
+
+          <button type="submit" class="btn">SUBMIT</button>
+          <h3>We will reach within 30 min</h3>
+          
+        </form>
+      </div>
+    
+</body>
+</html>

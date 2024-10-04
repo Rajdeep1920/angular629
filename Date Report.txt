@@ -1,0 +1,70 @@
+import {useState} from "react"
+
+
+
+function DateWise(){
+
+    const[fdate,setFdate]=useState("");
+    const[tdate,setTdate]=useState("");
+    const[all,setAll]=useState([]);
+
+
+        const ShowDate=()=>{
+            fetch("http://localhost/itemapi/ReportAPI/SalesReport.py",{
+                method:"POST",
+                body:JSON.stringify(
+                    {
+                        
+                        fromdate:fdate,
+                        todate:tdate
+                     
+                    }
+                ),
+                headers:{"content-type":"application/json;charset=UTF-8"}
+        }
+            ).then(response=>{
+                return response.json()
+            }).then(json=>{
+                setAll(json)
+                console.log(json)
+            })
+        }
+       
+    return(
+        <>
+        <h1>DateWiseSale</h1>
+        <input type="date" className="form-control" placeholder="From Date  YYYY/MM/DD" onChange={(e)=>setFdate(e.target.value)}/><br/><br/>
+        <input type="date" className="form-control" placeholder="To Date    YYYY/MM/DD" onChange={(e)=>setTdate(e.target.value)}/><br/><br/>
+        <button className="btn btn-warning" onClick={ShowDate}>Show</button><br/><br/>
+        <table className="table" border={"2px"}>
+            <tr>
+                <th>Sale Id</th>
+                <th>Sale Date</th>
+                <th>Category Id</th>
+                <th>Item Id</th>
+                <th>Rate</th>
+                <th>Quntity</th>
+                <th>Amount</th>
+                
+            </tr>
+            {
+               all.map((data)=>
+               <tr>
+                <td>{data.saleId}</td>
+                <td>{data.saleDate}</td>
+                <td>{data.catId}</td>
+                <td>{data.itemId}</td>
+                <td>{data.rate}</td>
+                <td>{data.quntity}</td>
+                <td>{data.amount}</td>
+                
+               </tr>
+               )
+            }
+        </table>
+
+        </>
+    );
+
+}
+export default DateWise;

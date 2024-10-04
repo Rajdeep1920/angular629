@@ -1,0 +1,16 @@
+templete editing 
+Streps
+
+1.create new projecct(templeteEditing)
+2.install bootstrap
+3.link bootstrap to your project
+3.create components(home,menu,login,registration,footer etc)(home is landing component(page))
+4. design every component(using templete)
+
+ bootstrap install command : npm install bootstrap
+
+ path:'login' component:login
+
+install icon in bootstrap : npm install bootstrap-icons
+
+
